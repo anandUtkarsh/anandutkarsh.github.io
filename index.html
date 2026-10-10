@@ -220,15 +220,16 @@
                     </div>
                 </div>
 
-                <!-- Right Image Column with 3D Tilt Effect -->
-                <div class="relative mx-auto hidden sm:flex items-center justify-center tilt-container">
-                    <div id="tilt-element" data-testid="hero-profile-avatar" class="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px] flex items-center justify-center tilt-element">
+                <!-- Right Image Column with 3D Tilt Effect - FIX: Removed 'hidden' and 'sm:flex' classes to display on mobile -->
+                <div class="relative mx-auto flex items-center justify-center tilt-container mt-12 lg:mt-0">
+                    <div id="tilt-element" data-testid="hero-profile-avatar" class="relative w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] flex items-center justify-center tilt-element">
                         <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-600/30 via-transparent to-purple-600/30 blur-2xl"></div>
                         <div class="absolute inset-0 rounded-full animate-spin-slow" style="background: conic-gradient(rgba(59, 130, 246, 0), rgba(59, 130, 246, 0.8), rgba(168, 85, 247, 0.8), rgba(0, 240, 255, 0.6), rgba(59, 130, 246, 0)); padding: 2.5px;">
                             <div class="w-full h-full rounded-full bg-[#090A0F]"></div>
                         </div>
                         <div class="absolute inset-3 rounded-full border border-white/10 animate-spin-slower" style="border-top-color: rgba(0, 240, 255, 0.5); border-style: dashed;"></div>
                         <div class="relative w-[78%] h-[78%] rounded-full bg-[#0D0F17] border border-white/10 overflow-hidden shadow-[inset_0_0_60px_rgba(59,130,246,0.12)]">
+                            <!-- Image path explicitly set as requested -->
                             <img alt="Utkarsh Anand" data-testid="hero-profile-photo" class="w-full h-full object-cover" src="assets/files/utkarshanand.jpg">
                         </div>
                         
@@ -293,8 +294,8 @@
                     <p data-testid="about-copy" class="text-lg md:text-2xl leading-relaxed md:leading-relaxed text-slate-400 font-light">
                         I've always been driven by a single core mission: <span class="text-gradient-cool font-semibold inline-block">solving real-world problems</span>. My journey has taken me from Software Engineering to Big Data, and now to <span class="text-gradient-cool font-semibold inline-block">Analytics Engineering</span>. I don't just move data; I build the architectures and models that help businesses make smarter decisions. Whether I'm collaborating with AI or designing a robust data pipeline, I'm here to <span class="text-gradient-cool font-semibold inline-block">build things that actually matter</span>.
                     </p>
-			<p data-testid="about-copy" class="text-lg md:text-2xl leading-relaxed md:leading-relaxed text-slate-400 font-light">
-                    	Love having meaningful discussions over tech, products and real world problems ❤️ 
+            <p data-testid="about-copy" class="text-lg md:text-2xl leading-relaxed md:leading-relaxed text-slate-400 font-light">
+                        Love having meaningful discussions over tech, products and real world problems ❤️ 
 </p>
                     <div class="mt-14 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-0">
                         <div class="flex items-center gap-4 sm:gap-0">
@@ -351,7 +352,7 @@
                             </div>
                             <h3 class="text-lg md:text-2xl font-bold tracking-tight text-slate-100 group-hover:text-white transition-colors">Senior Analytics Engineer</h3>
                             <p class="mt-1.5 text-sm md:text-base font-medium">
-                                <a href="https://www.tide.co/" target="_blank" class="text-gradient hover:underline underline-offset-4 decoration-sky-400/60">@ Tide</a>
+                                <a href="https://www.tide.co/" target="_blank" class="text-gradient inline-block hover:underline underline-offset-4 decoration-sky-400/60">@ Tide</a>
                             </p>
                             <p class="mt-4 text-sm md:text-base text-slate-400 leading-relaxed max-w-2xl">Spearheading the modern analytics architecture using dbt, Snowflake/GCP BigQuery and Looker to turn massive datasets into rapid, reliable business insights. I am currently integrating AI tools like Claude and Gemini to accelerate data modeling, optimize automated pipelines (via Fivetran/Paradime), and build a truly scalable, self-serve data culture.</p>
                         </article>
@@ -369,7 +370,7 @@
                             </div>
                             <h3 class="text-lg md:text-2xl font-bold tracking-tight text-slate-100 group-hover:text-white transition-colors">Business Technology Solutions Associate Consultant</h3>
                             <p class="mt-1.5 text-sm md:text-base font-medium">
-                                <a href="https://www.zs.com/" target="_blank" class="text-gradient hover:underline underline-offset-4 decoration-sky-400/60">@ ZS Associates</a>
+                                <a href="https://www.zs.com/" target="_blank" class="text-gradient inline-block hover:underline underline-offset-4 decoration-sky-400/60">@ ZS Associates</a>
                             </p>
                             <p class="mt-4 text-sm md:text-base text-slate-400 leading-relaxed max-w-2xl">Bridged the gap between raw data engineering and executive strategy. I designed and deployed complex Big Data architectures, automated intricate analytical workflows, and translated messy data into high-stakes technological solutions that directly influenced client business outcomes.</p>
                         </article>
@@ -387,7 +388,7 @@
                             </div>
                             <h3 class="text-lg md:text-2xl font-bold tracking-tight text-slate-100 group-hover:text-white transition-colors">Big Data Engineer</h3>
                             <p class="mt-1.5 text-sm md:text-base font-medium">
-                                <a href="https://www.datametica.com/" target="_blank" class="text-gradient hover:underline underline-offset-4 decoration-sky-400/60">@ Datametica</a>
+                                <a href="https://www.datametica.com/" target="_blank" class="text-gradient inline-block hover:underline underline-offset-4 decoration-sky-400/60">@ Datametica</a>
                             </p>
                             <p class="mt-4 text-sm md:text-base text-slate-400 leading-relaxed max-w-2xl">Architected and optimized heavy-duty distributed data pipelines and migration strategies using the Hadoop ecosystem (Hive, Oozie). I specialized in infrastructure resilience and rapid data processing, earning the Spot and Hulk awards for executing critical, time-sensitive client deliverables.</p>
                         </article>
@@ -405,7 +406,7 @@
                             </div>
                             <h3 class="text-lg md:text-2xl font-bold tracking-tight text-slate-100 group-hover:text-white transition-colors">Systems Engineer</h3>
                             <p class="mt-1.5 text-sm md:text-base font-medium">
-                                <a href="https://www.infosys.com/" target="_blank" class="text-gradient hover:underline underline-offset-4 decoration-sky-400/60">@ Infosys</a>
+                                <a href="https://www.infosys.com/" target="_blank" class="text-gradient inline-block hover:underline underline-offset-4 decoration-sky-400/60">@ Infosys</a>
                             </p>
                             <p class="mt-4 text-sm md:text-base text-slate-400 leading-relaxed max-w-2xl">Laid the bedrock of my engineering career by building and maintaining robust enterprise software. Focused on core backend development, automating system operations via shell scripting, and consistently shipping clean, production-ready code in high-traffic environments.</p>
                         </article>
@@ -522,8 +523,8 @@
                         </div>
                         <h3 class="text-lg md:text-xl font-bold tracking-tight text-slate-100 leading-snug">
                             <a href="https://doi.org/10.1007/s11277-020-07896-w" target="_blank" class="hover:underline underline-offset-4 decoration-sky-400/60">Trainable Framework for Information Extraction, Structuring and Summarization of Unstructured Data</a>
-			<p class="mt-3 text-sm text-slate-400 leading-relaxed">Developed a novel NLP framework utilizing Modified NER to automate the extraction and summarization of complex, unstructured text.</p>
                         </h3>
+                        <p class="mt-3 text-sm text-slate-400 leading-relaxed">Developed a novel NLP framework utilizing Modified NER to automate the extraction and summarization of complex, unstructured text.</p>
                         <div class="mt-5 flex flex-wrap gap-2.5">
                             <span class="rounded-full border border-sky-400/30 bg-sky-400/10 px-3.5 py-1.5 text-xs text-sky-200">Wireless Personal Communications</span>
                             <span class="rounded-full border border-purple-400/30 bg-purple-400/10 px-3.5 py-1.5 text-xs text-purple-200">Natural Language Processing (NLP)</span>
@@ -606,7 +607,7 @@
                 </div>
                 
                 <div class="mt-16 pt-8 border-t border-white/5">
-                    <p class="font-mono text-xs text-slate-600 tracking-wide">© 2026 Utkarsh Anand — Built with ❤️</p>
+                    <p class="font-mono text-xs text-slate-600 tracking-wide">© 2026 Utkarsh Anand — Built with precision and clarity.</p>
                 </div>
             </div>
         </footer>
